@@ -1,0 +1,12 @@
+---
+layout: post-no-feature
+title: "CS172 Notes"
+description: "Spring 2015"
+category: articles
+mathjax: true
+
+---
+
+I'll put my notes for CS172 here. If you see an error or would like to contribute an improvement please fork the [repo](https://github.com/ddinh/cs172-notes) and send a pull request.
+
+1. [20 January]({{ site.url }}/classes/cs172/notes/lecture-01.html): Course info
