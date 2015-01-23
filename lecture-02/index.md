@@ -27,13 +27,13 @@ Each node corresponds to one of our output states (remember that our ouput is on
 
 Let's write this as pseudocode:
 
-```
+{% highlight text %}
 m = 0
 while not EOF:
     read x
     m <- 3m + x
 return m % 2 == 0
-```
+{% endhighlight %}
 
 Note that if we take a modulus with respect to $$2$$ at each step, we don't change the behavior, but we reduce the memory usage to $$O(1)$$. That leads to this DFA:
 
@@ -41,12 +41,12 @@ Note that if we take a modulus with respect to $$2$$ at each step, we don't chan
 
 **Example:** Given a string of `a`s and `b`s, we want to know whether `aabb` a substring. Here's a naive implementation:
 
-```
+{% highlight text %}
 for i = 0 to n-4:
     if s[i:i+3] == "aabb":
         return YES
 return NO
-```
+{% endhighlight %}
 
 One way we can represent this as a DFA is to hold the previous three characters in a buffer initialized to `bbb`.
 
