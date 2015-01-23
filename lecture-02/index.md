@@ -97,7 +97,7 @@ We can construct an automaton $$M'$$ that decides $$L_{1}\cup L_{2}$$ just like 
 
 **Definition:** Let $$s,t\in\Sigma^{*}$$ are strings, then let $$s\circ t$$ denote their concatenation.
 
-**Definition:** If $$L_{1}$$ and $$L_{2}$$ are subsets of $$\Sigma^{*}$$, then let $$L_{1}\circ L_{2}=\{s_{1}\circ s_{2}\mbox{such that}s_{1}\in L_{1}\mbox{and}s_{2}\in L_{2}\}$$.
+**Definition:** If $$L_{1}$$ and $$L_{2}$$ are subsets of $$\Sigma^{*}$$, then let $$L_{1}\circ L_{2}=\{s_{1}\circ s_{2}\mbox{ such that }s_{1}\in L_{1}\mbox{ and }s_{2}\in L_{2}\}$$.
 
 **Theorem:** If $$L_{1}$$ and $$L_{2}$$ are regular, then $$L_{1}\circ L_{2}$$ is regular.
 
