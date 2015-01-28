@@ -57,7 +57,7 @@ Let's return to the theorem and formally define the DFA corresponding to an NFA.
 
 - $$q_{0}' $$ is the single-element set $$q_{0}$$.
 
-- $$F'$$ is defined as the set of all sets that include at least one element in $$F$$; that is, $$F'=\{s:|s\cap F|\ge1\}$$
+- $$F'$$ is defined as the set of all sets that include at least one element in $$F$$; that is, $$F'=\{s:\vert s\cap F\vert \ge1\}$$
 
 We can now proceed by induction to complete the proof. $$\blacksquare$$
 
