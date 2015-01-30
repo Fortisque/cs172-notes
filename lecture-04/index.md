@@ -25,7 +25,7 @@ If $$E_{1}$$ and $$E_{2}$$ are regular expressions describing languages $$L_{1}$
 
 - $$E_{1}^{*}$$ is a regular expression representing $$L_{1}^{*}$$. 
 
-In some texts the union operation is denoted as multiplication (i.e. $$a\cup b\equiv ab$$) and $$E_{1}\circ E_{1}^{*}$$ is abbreviated $$E_{1}+$$.
+In some texts the union operation is denoted by addition (i.e. $$a\cup b\equiv a+b$$), the concatenation operator is denoted by multiplication (i.e. $$a\circ b\equiv ab$$), and $$E_{1}\circ E_{1}^{*}$$ is abbreviated $$E_{1}+$$.
 
 ###Regular Expressions and Automata
 
@@ -75,7 +75,7 @@ we turn it into a normal form GNFA by creating a new start state, connecting it 
 
 and repeatedly construct an equivalent GNFA with one fewer state (whose existence is guaranteed by the lemma) until the number of states is two, at which point we have a regular expression that describes the language.
 
-It now sufficies to prove the lemma.
+It now suffices to prove the lemma.
 
 Suppose we have a normal form GNFA $$M$$ with $$k\ge3$$ states.
 
@@ -132,3 +132,7 @@ One limitation is inability to handle nested expressions. It is impossible, for 
 Why can't this be recognized by an automaton? Intuitively: Let's imagine a simple algorithm for dealing with this: keep a counter initialized at $$0$$, increment it when we seee a `(` and decrement it when we see a `)`. If at any time the counter drops below $$0$$, return NO; at the end of the string, return YES if the counter is exactly $$0$$ and return NO otherwise. The issue is that the counter takes up to $$O(\log n)$$ space where $$n$$ is the length of the input (since we have to store an integer of size up to $$n$$). DFAs can't handle non-constant memory.
 
 Formally: suppose for contradiction $$L$$ is regular. Then there exists a DFA $$M$$ that decides it. Let $$k$$ be the number of states of $$M$$ . Consider the state reached by $$M$$ in each of the following $$k+1$$ cases: `(`, `((`, `(((`, etc. up to $$k+1$$ consecutive `(`s. By the pigeonhole principle, there must be two input strings comprised of different numbers of consecutive `(`s (let's call their lengths $$a$$ and $$b$$, with $$a\neq b$$) that both make $$M$$ reach the same state. Now imagine we append the string comprised of $$a$$ consecutive `)`s to both of those strings. Since the DFA is in the same state once the open parentheses are all read, and the strings are identical thereafter, either both strings must be accepted or both must be rejected; this is obviously erroneous, so $$L$$ cannot be regular.
+
+---
+
+*Thanks to Anonymous on Piazza for pointing out notation error: union is addition and concatenation is multiplication, not the other way around.*
