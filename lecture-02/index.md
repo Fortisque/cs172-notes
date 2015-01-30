@@ -84,10 +84,10 @@ Imagine we have two DFAs $$M_{1}$$ and $$M_{2}$$ deciding $$L_{1}$$ and one deci
 
 Formally, let $$M_{1}=(Q_{1},\Sigma,\delta_{1},q_{01},F_{1})$$ and $$M_{2}=(Q_{2},\Sigma,\delta_{2},q_{02},F_{2})$$, define $$M=Q(Q,\Sigma,\delta,q_{0},F)$$ with its components defined as follows:
 
-- \\(Q=Q_{1}\times Q_{2}\\)
-- \\(\delta((q_{1},q_{2}),a)=(\delta_{1}(q_{1},a),\delta_{2}(q_{2},a))\\)
-- \\(q_{0}=(q_{01},q_{02})\\)
-- \\(F=F_{1}\times F_{2}\\)
+- \\(Q=Q\_{1}\times Q\_{2}\\)
+- \\(\delta((q\_{1},q\_{2}),a)=(\delta\_{1}(q\_{1},a),\delta\_{2}(q\_{2},a))\\)
+- \\(q\_{0}=(q\_{01},q\_{02})\\)
+- \\(F=F\_{1}\times F\_{2}\\)
 
 To prove that $$M$$ actually accepts $$L_{1}\cap L_{2}$$, we would need to prove (by induction on the length of the input) that $$M$$ actually decides this language; for the purposes of this class, however, a construction of the machine and an intuitive explanation of why it decides the language will suffice.
 
