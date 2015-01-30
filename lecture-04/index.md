@@ -17,7 +17,7 @@ This leads to define *regular expressions* as follows:
 
 - $$\epsilon$$ is a regular expression representing the language $$\{\epsilon\}$$.
 
-- For all characters $$a\in\Sigma$$, $$a$$ is a regular expression representing \{a\}.
+- For all characters $$a\in\Sigma$$, $$a$$ is a regular expression representing $$\{a\}$$.
 
 If $$E_{1}$$ and $$E_{2}$$ are regular expressions describing languages $$L_{1}$$ and $$L_{2}$$ respectively, then:
 
@@ -101,15 +101,15 @@ We start with the parity DFA
 
 Turn it into a normal form GNFA:
 
-![](figure-06.jpg)
-
-Now remove the rightmost state:
-
 ![](figure-07.jpg)
 
 Now remove the rightmost state:
 
 ![](figure-08.jpg)
+
+Now remove the rightmost state:
+
+![](figure-09.jpg)
 
 which gives us the regular expression $$(0\cup10^{*}1)^{*}$$.
 
@@ -117,7 +117,7 @@ which gives us the regular expression $$(0\cup10^{*}1)^{*}$$.
 
 We hae a number of equivalent views of computation representing one-pass algorithms that can be done with constant memory, and have algorithmic ways to translate between them.
 
-![](figure-09.jpg)
+![](figure-10.jpg)
 
 [pic from phone]
 
