@@ -12,3 +12,4 @@ I'll put my notes for CS172 here. If you see an error or would like to contribut
 1. [20 January]({{ site.url }}/classes/cs172/notes/lecture-01): Course info
 2. [22 January]({{ site.url }}/classes/cs172/notes/lecture-02): DFAs
 3. [27 January]({{ site.url }}/classes/cs172/notes/lecture-03): NFAs
+3. [29 January]({{ site.url }}/classes/cs172/notes/lecture-03): Regular Expressions
