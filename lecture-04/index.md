@@ -7,8 +7,6 @@ mathjax: true
 
 ---
 
-**INCOMPLETE:** Figures are currently being scanned.
-
 Recall that If $$L_{1}$$ and $$L_{2}$$ are regular languages - that is, we can create an automaton that decides $$L_{1}$$ and $$L_{2}$$ , then so are $$L_{1}\cup L_{2}$$ , $$L_{1}\circ L_{2}$$ , and $$L^{*}$$.
 
 This leads to define *regular expressions* as follows:
