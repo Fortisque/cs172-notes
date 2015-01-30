@@ -25,7 +25,7 @@ If $$E_{1}$$ and $$E_{2}$$ are regular expressions describing languages $$L_{1}$
 
 - $$E_{1}\circ E_{2}$$ is a regular expression representing $$L_{1}\circ L_{2}$$.
 
-- $$E_{1}^{*}$$ is a regular expression representing$$ L_{1}^{*}$$. 
+- $$E_{1}^{*}$$ is a regular expression representing $$L_{1}^{*}$$. 
 
 In some texts the union operation is denoted as multiplication (i.e. $$a\cup b\equiv ab$$) and $$E_{1}\circ E_{1}^{*}$$ is abbreviated $$E_{1}+$$.
 
