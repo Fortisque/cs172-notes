@@ -123,7 +123,7 @@ What are we unable to parse with regular expressions?
 
 One limitation is inability to handle nested expressions. It is impossible, for instance, to deal with the language of properly matched parentheses, i.e. the one defined as follows:
 
-- \(\epsilon\in L\\) 
+- \\(\epsilon\in L\\) 
 
 - $$s,t\in L$$ implies $$s\circ t\in L$$ 
 
