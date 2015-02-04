@@ -76,7 +76,9 @@ We can construct a DFA by observing that each state $$[s]$$, when presented with
 
 ![](figure-01.png)
 
-We want to prove that this is the *smallest* DFA that accepts that language. It suffices to prove that $$\delta^{*}(q_{0},s)=[s]$$.
+---
+
+We want to prove that this process results in the *smallest* DFA that accepts that language. It suffices to prove that $$\delta^{*}(q_{0},s)=[s]$$.
 
 We will use induction on the length of the string.
 
@@ -84,7 +86,7 @@ For the base case, in which $$s=\epsilon$$, it is obvious that $$s^{*}(q_{0},\ep
 
 Suppose for induction that $$\delta^{*}(q_{0},s)=[s]$$ for strings $$s$$ of length less than or equal to $$k$$. Let $$s=s'a$$. Then $$\delta^{*}(q_{0},s'a)=\delta(\delta^{*}(q_{0},s'),a)$$; by the inductive hypothesis, this is $$\delta([s'],a)=[s'a]$$.
 
-We must now verify that our process actually creates a DFA: that is, given a state that contains strings $$a$$ and $$b$$ , we must ensure that for all chracters $$k$$ , $$ak$$ and $$bk$$ are in the same state so we don't end up with an NFA. In other words, we wish to show that if $$s_{1}\equiv_{L}s_{2}$$ (that is: $$\forall t:s_{1}t\in L\iff s_{2}t\in L$$), then $$s_{1}a\equiv_{L}s_{2}a$$ (that is: $$\forall t:s_{1}at\in L\iff s_{2}at\in L$$. But this is obvious (just let $$t$$ in the condition be $$at$$ in the implication).
+We must now verify that our process actually creates a DFA: that is, given a state that contains strings $$a$$ and $$b$$ , we must ensure that for all chracters $$k$$ , $$ak$$ and $$bk$$ are in the same state so we don't end up with an NFA. In other words, we wish to show that if $$s_{1}\equiv_{L}s_{2}$$ (that is: $$\forall t:s_{1}t\in L\iff s_{2}t\in L$$), then $$s_{1}a\equiv_{L}s_{2}a$$ (that is: $$\forall t:s_{1}at\in L\iff s_{2}at\in L$$. But this is obvious (just let $$t$$ in the condition be $$at$$ in the implication). $$\blacksquare$$
 
 ###Finding minimal automata
 
