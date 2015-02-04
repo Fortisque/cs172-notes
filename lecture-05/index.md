@@ -16,7 +16,7 @@ Today, we'll examine:
 
 Recall from last lecture that we showed that the language of properly matched parentheses is not a regular language.
 
-There are two main ways we can show that a language is not irregular. One way, described in the book, is the *pumping lemma*. We will cover another method, the *Myhill-Nerode theorem*, today.
+There are two main ways we can show that a language is not regular. One way, described in the book, is the *pumping lemma*. We will cover another method, the *Myhill-Nerode theorem*, today.
 
 **Definition:** If $$M=(Q,\Sigma,\delta,q_{0},F)$$, we define: 
 
@@ -82,7 +82,7 @@ We want to prove that this process results in the *smallest* DFA that accepts th
 
 We will use induction on the length of the string.
 
-For the base case, in which $$s=\epsilon$$, it is obvious that $$s^{*}(q_{0},\epsilon)=q_{0}$$.
+For the base case, in which $$s=\epsilon$$, it is obvious that $$\delta^{*}(q_{0},\epsilon)=q_{0}$$.
 
 Suppose for induction that $$\delta^{*}(q_{0},s)=[s]$$ for strings $$s$$ of length less than or equal to $$k$$. Let $$s=s'a$$. Then $$\delta^{*}(q_{0},s'a)=\delta(\delta^{*}(q_{0},s'),a)$$; by the inductive hypothesis, this is $$\delta([s'],a)=[s'a]$$.
 
