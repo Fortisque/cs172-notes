@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
 title: "Lecture 5"
-description: "Complexity of Regular Languages, Part 1"
+description: "Irregular Languages"
 category: articles
 mathjax: true
 
@@ -88,7 +88,7 @@ Suppose for induction that $$\delta^{*}(q_{0},s)=[s]$$ for strings $$s$$ of leng
 
 We must now verify that our process actually creates a DFA: that is, given a state that contains strings $$a$$ and $$b$$ , we must ensure that for all chracters $$k$$ , $$ak$$ and $$bk$$ are in the same state so we don't end up with an NFA. In other words, we wish to show that if $$s_{1}\equiv_{L}s_{2}$$ (that is: $$\forall t:s_{1}t\in L\iff s_{2}t\in L$$), then $$s_{1}a\equiv_{L}s_{2}a$$ (that is: $$\forall t:s_{1}at\in L\iff s_{2}at\in L$$. But this is obvious (just let $$t$$ in the condition be $$at$$ in the implication). $$\blacksquare$$
 
-###Finding minimal automata
+###Preview: Finding minimal automata
 
 We now turn attention to finding the smallest automata that accepts a certain language.
 
