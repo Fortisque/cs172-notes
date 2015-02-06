@@ -7,7 +7,7 @@ mathjax: true
 
 ---
 
-We'll continue our discussion from the last lecture fo minimizing the number of states of a DFA, and present an algorithm to do so in time polynomial to the number of sates of the automaton.
+We'll continue our discussion from the last lecture of minimizing the number of states of a DFA, and present an algorithm to do so in time polynomial to the number of sates of the automaton.
 
 Our approach will be as follows: given an automaton $$M$$, define an equivalence relation $$\approx_{M}$$ among states, and then merge equivalent states. Our equivalence relation is defined as follows: two states $$q_{1}$$ and $$q_{2}$$ are equivalent if for any string $$t$$, $$M$$ will accept if fed $$t$$ when in state $$q_{2}$$ if and only if $$M$$ will accept if it is fed $$t$$ when it is in state $$q_{2}$$; that is:
 
