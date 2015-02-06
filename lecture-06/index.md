@@ -58,4 +58,4 @@ We wish to show that after removing unreachable states, $$M'$$ will be minimal: 
 
 Note that any optimal DFA is unique up to the labels of the states.
 
-**Thanks to Anonymous and Luca Trevisan pointing out numerous typos and suggesting enhancements to this document!*
+*Thanks to Anonymous and Luca Trevisan pointing out numerous typos and suggesting enhancements to this document!*
