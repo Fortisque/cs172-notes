@@ -25,7 +25,7 @@ It is simple to construct $$\approx_{M}^{n+1}$$ given $$\approx_{M}^{n}$$: we kn
 
 - there is a string $$t$$ of length $$n+1$$ such of $$\delta^{*}(q_{1},t)$$ and $$\delta^{*}(q_{2},t)$$, one is in $$F$$ and the other is not.
 
-- \\(q_{1}\not\approx_{M}^{n}q_{2}\\)
+- \\(q\_{1}\not\approx\_{M}^{n}q\_{2}\\)
 
 If we're doing this recursively, we know the second; only the first is of consequence. The first is simple to check: we simply check if $$\delta(q_{1},a)\approx_{M}^{n}\delta(q_{2},a)$$ far all $$a\in\Sigma^{*}$$; if this does not hold for some $$a$$, then the first condition holds implying that $$q_{1}\not\approx_{M}^{n+1}q_{2}$$.
 
@@ -37,7 +37,7 @@ In general, once we compute $$\approx_{M}$$ for $$M=(Q,\Sigma,\delta,q_{0},F)$$,
 
 - $$Q'$$ contains one state for each equivalence class of $$Q$$ according to $$\approx_{M}$$.
 - $$\delta'([q],a)=[\delta(q,a)]$$; that is, given an equivalence class of states containing $$q$$ and a character $$a$$, we go to the equivalence class of $$\delta(q,a)$$ .
-- \\(q_{0}'=[q_{0}]\\) 
+- \\(q\_{0}'=[q\_{0}]\\) 
 - \\(F'=\{[q]:q\in F\}\\)
  
 We now wish to argue that $$M'$$ is deterministic, correct, and minimal.
