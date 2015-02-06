@@ -38,7 +38,7 @@ In general, once we compute $$\approx_{M}$$ for $$M=(Q,\Sigma,\delta,q_{0},F)$$,
 - $$Q'$$ contains one state for each equivalence class containing $$Q$$ according to $$\approx_{M}$$.
 - $$\delta'([q],a)=[\delta(q,a)]$$; that is, given an equivalence class of states containing $$q$$ and a character $$a$$, we go to the equivalence class containing $$\delta(q,a)$$ .
 - \\(q\_{0}'=[q\_{0}]\\) 
-- \\(F'=\{[q]:q\in F\}\\)
+- \\(F'=\\{[q]:q\in F\\}\\)
  
 We now wish to argue that $$M'$$ is deterministic, correct, and minimal.
 
