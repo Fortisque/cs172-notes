@@ -7,7 +7,6 @@ mathjax: true
 
 ---
 
-
 Today, we discuss *streaming algorithms*, which make one pass through input and use very limited memory. We'll treat our input is a sequence of $$n$$ elements of a set $$\Sigma$$, such that $$|\Sigma|=2^{l}$$.
 
 Consider these two problems:
