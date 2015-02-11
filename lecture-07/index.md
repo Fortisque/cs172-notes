@@ -13,7 +13,7 @@ Consider these two problems:
 
 **Problem 1:** Suppose we want to find the most frequent element of our input. Formally, suppose we have $$s_{i},...,s_{n}$$, is defined such that some input appears at least $$\frac{n}{2}+1$$ times. We wish to find it with $$\log n+l$$ bits of memory.
 
-We will see later to day that finding a most frequent element without the assumption that there exists an element that appears at least $$\frac{n}{2}+1$$ times requires $$\Omega(nl)$$ memory if $$2^{l}>n^{2}$$. More generally, we will prove any algorithm that checks, given $$n$$ inputs, if $$0$$ is the most frequent element (we'll call this “Problem 2”), needs at least $$O(ln)$$ bits of memory.
+We will see later to day that finding a most frequent element without the assumption that there exists an element that appears at least $$\frac{n}{2}+1$$ times requires $$\Omega(nl)$$ memory if $$2^{l}>n^{2}$$. More generally, we will prove any algorithm that checks, given $$n$$ inputs, if $$0$$ is the most frequent element (we'll call this **Problem 2**), needs at least $$O(ln)$$ bits of memory.
 
 ###A lower bound
 
