@@ -25,7 +25,7 @@ Define the language $$L$$ to be the set of all sequences of length $$n'\le n$$ i
 
 - $$L$$ has at least $$2^{\Omega(nl)}$$ distinguishable strings.
 
-These two imply that $$2^{m+\log n}>2^{\Omega(nl)}$$, implying that $$m>\Omega(nl)-\log n$$ (or, since we're talking asymtotics, $$m>\Omega(nl)$$).
+These two imply that $$2^{m+\log n}>2^{\Omega(nl)}$$, implying that $$m>\Omega(nl)-\log n$$ (or, since we're talking asymptotics, $$m>\Omega(nl)$$).
 
 Let $$m$$ be the amount of memory in bits used by an algorithm for problem 2 on inputs of length at most $$n$$.
 
@@ -33,7 +33,7 @@ Add a counter, bringing total memory use to $$m+\log n$$ bits so we can solve pr
 
 Construct a single DFA state for each possible content of the memory of the algorithm. The start state of the DFA corresponds to the state of the algorithm at the start.
 
-Let's look at strings constructed as follows: start with `000`, and then $$\frac{n-5}{2}$$ pairs of nonzero numbers each (for instance: `000113355` and `00112233`). Notice that any two strings with different choices of the $$\frac{n-5}{2}$$ character pairs are distinguishable; for instance, for the two strings given earlier, appending `22` to both strings will cause the first to reject and the second to accept. That means the number of distinguishable strings is $$\binom{2^{l}}{(n-5)/2}$$. We'll use the inequality: $$\binom{n}{k}\ge(\frac{n}{ek})^{k}$$ to get:
+Let's look at strings constructed as follows: start with `000`, and then $$\frac{n-5}{2}$$ pairs of nonzero numbers each (for instance: `000113355` and `000112233`). Notice that any two strings with different choices of the $$\frac{n-5}{2}$$ character pairs are distinguishable; for instance, for the two strings given earlier, appending `22` to both strings will cause the first to reject and the second to accept. That means the number of distinguishable strings is $$\binom{2^{l}}{(n-5)/2}$$. We'll use the inequality: $$\binom{n}{k}\ge(\frac{n}{ek})^{k}$$ to get:
 
 $$\binom{2^{l}}{(n-5)/2}>(\frac{2^{l}}{\frac{e(n-5)}{2}})^{\frac{n-5}{2}}$$
 
@@ -53,7 +53,7 @@ We define two sequences $$x_{1}...x_{n_{1}}$$ and $$y_{1}...y_{n_{2}}$$ to be *d
 
 **Fact:** if a problem admits at least $$2^{m(n)}$$ distinguishable sequences for length $$n$$, then every streaming algorithm for the problem needs at least $$m(n)$$ bits of memory on inputs of length $$n$$. We can see why this is the case using a counting argument similar to the one we used DFAs: having fewer than $$m(n)$$ bits of memory means we'd have less than $$2^{m(n)}$$ memory states, which means that there would be at least two distinguishable states we could feed in that would map to the same memory state; this would mean that any input fed into our algorithm thereafter would lead to the same result, violating the assumption that the states are distinguishable.
 
-Considering the distinct elements problem, consider two strings of length $$n-1$$ comprised of distinct elements. If the character $$a$$ is in one but not the other, then appending $$a$$ to both will allow us to distinguish them (since one will have $$n-1$$ distinct elements and the other has $$n$$ distinct elements). That means that the number of distinguishable strings is bounded below by $$\binom{2^{l}}{n-1}>(\frac{2^{l}}{e(n-1)})^{n-1}$$, so, using the same assumption $$(2^{l}>n^{2}$$) and the same methodology as before, we get $$n\ge2^{\Omega(ln)}$$.
+Considering the distinct elements problem, consider two strings of length $$n-1$$ comprised of distinct elements. If the character $$a$$ is in one but not the other, then appending $$a$$ to both will allow us to distinguish them (since one will have $$n-1$$ distinct elements and the other has $$n$$ distinct elements). That means that the number of distinguishable strings is bounded below by $$\binom{2^{l}}{n-1}>(\frac{2^{l}}{e(n-1)})^{n-1}$$, so, using the same assumption $$(2^{l}>n^{2}$$) and the same methodology as before, we get $$m\ge2^{\Omega(ln)}$$.
 
 ###Approximation approaches
 
@@ -90,3 +90,5 @@ P[\frac{1}{\delta}<\frac{k}{10}] & = & P[\delta>\frac{10}{k}]\\
 $$
 
 *Thanks to Anonymous on Piazza for contributing the problem 1 solution and various enhancements/fixes.*
+
+*Thanks to Manuel Sabin for pointing out typos.*
