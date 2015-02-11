@@ -7,7 +7,7 @@ mathjax: true
 
 ---
 
-Today, we discuss *streaming algorithms*, which make one pass through input and use very limited memory. We'll treat our input is a sequence of $$n$$ elements of a set $$\Sigma$$, such that $$|\Sigma|=2^{l}$$.
+Today, we discuss *streaming algorithms*, which make one pass through input and use very limited memory. We'll treat our input is a sequence of $$n$$ elements of a set $$\Sigma$$, such that $$\vert \Sigma \vert=2^{l}$$.
 
 Consider these two problems:
 
@@ -45,7 +45,7 @@ Notice that it sometimes is the case where accessing the memory in a different o
 
 ###Distinguishability revisited
 
-**Problem 3:** Given $$s_{1},...,s_{n'}$$, for $$n'\le n$$ such that $$s_{i}\in\Sigma$$ where $$|\Sigma|=2^{l}$$, we want to compute the number of distinct elements in the input.
+**Problem 3:** Given $$s_{1},...,s_{n'}$$, for $$n'\le n$$ such that $$s_{i}\in\Sigma$$ where $$\vert \Sigma \vert=2^{l}$$, we want to compute the number of distinct elements in the input.
 
 We define two sequences $$x_{1}...x_{n_{1}}$$ and $$y_{1}...y_{n_{2}}$$ to be *distinguishable* for a problem for input length $$n$$ if there exists a string $$z_{1}...z_{n_{3}}$$ such that the correct answer for $$x_{1}...x_{n_{1}}z_{1}...z_{n_{3}}$$ is different from the correct answer to $$y_{1}...y_{n_{2}}z_{1}...z_{n_{3}}$$ and $$n_{1}+n_{3},n_{2}+n_{3}\le n$$. This is basically the same thing as distinguishable strings, except we're talking about more general algorithms (instead of just automata) where the answer might be more interesting than a bit.
 
