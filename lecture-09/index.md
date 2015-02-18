@@ -61,8 +61,6 @@ Suppose we have a language $$L\subseteq\Sigma^{*}$$ and we have an NDTM $$M$$ th
 
 Given an input $$x$$, and a configuration $$\{q_{0}x\}$$, our machine works as follows:
 
-[I know this formatting is broken - I need to experiment a bit on putting math incode blocks - will be fixed later today]
-
 {% highlight text %}
 for each t ≥ 1:
     N := ∅
@@ -70,7 +68,6 @@ for each t ≥ 1:
         for each c' that is a next step configuration for c 
             define N to be N ∪ {c'}
             if c' is accepting, return TRUE
-
     C:=N
 {% endhighlight %}
 
