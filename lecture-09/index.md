@@ -59,7 +59,7 @@ We now wish to show that we can build a deterministic TM to recognize any langua
 
 Suppose we have a language $$L\subseteq\Sigma^{*}$$ and we have an NDTM $$M$$ that recognizes $$L$$. We wish to show that there exists a deterministic recognizer for that language, which we build as follows:
 
-Given an input $$x$$, and a configuration $$\{q_{0}x\}$$, our machine works as follows:
+Given an input $$x$$, and a configuration $$C=\{q_{0}x\}$$, our machine works as follows:
 
 {% highlight text %}
 while true:
@@ -71,4 +71,4 @@ while true:
     C := N
 {% endhighlight %}
 
-Note that this mathine will never reject (it will infinite loop if it doesn't accept).
+Note that this machine will never reject (it will infinite loop if it doesn't accept).
