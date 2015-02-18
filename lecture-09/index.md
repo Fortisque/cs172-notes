@@ -64,14 +64,14 @@ Given an input $$x$$, and a configuration $$\{q_{0}x\}$$, our machine works as f
 [I know this formatting is broken - I need to experiment a bit on putting math incode blocks - will be fixed later today]
 
 {% highlight text %}
-for each $$t\ge1$$:
-    define $$N=\emptyset$$.
-    For each $$c$$ in $$C$$: 
-        for each $$c'$$ that is a next step configuration for $$c$$ 
-            define $$N$$ to be $$N\cup\{c'\}$$
-            if $$c'$$ is accepting, return TRUE
+for each t ≥ 1:
+    N := ∅
+    For each c ∈ C: 
+        for each c' that is a next step configuration for c 
+            define N to be N ∪ {c'}
+            if c' is accepting, return TRUE
 
-    $$C:=N$$
+    C:=N
 {% endhighlight %}
 
 Note that this mathine will never reject (it will infinite loop if it doesn't accept).
