@@ -27,7 +27,7 @@ Define $$L(E)$$ to be the set of strings in $$\Sigma^{*}$$ that are outputted by
 
 **Theorem:** A language $$L\subseteq\Sigma^{*}$$ is recognizable if and only if there is an enumerator $$E$$ such that $$L(E)=L$$.
 
-Proving the if direction is easy: we can simulate the enumerator using a two-tape TM $$M$$ (which we proved to be equivalent in computational power to a normal one-tape TM in the previous lecture) as follows: first, given an input $$x$$ on the Tape 2, $$M$$ first moves to the end of $$x$$, then simulates all the transitions of $$E$$ (with tape 1 simulating the write tape from $$E$$ and the part of tape 2 after $$x$$ simulating the R/W tape from $$E$$).. At each transition that writes the character $$\#$$ on tape $$1$$, $$M$$ chacks if the string $$\#...\#$$ equals $$x$$. If it's equal, then $$M$$ accepts; if we never see $$x$$, then we just keep going (which is fine since recognizability means that we don't accept if the string is in the language - infinite execution is OK).
+Proving the if direction is easy: we can simulate the enumerator using a two-tape TM $$M$$ (which we proved to be equivalent in computational power to a normal one-tape TM in the previous lecture) as follows: first, given an input $$x$$ on the Tape 2, $$M$$ first moves to the end of $$x$$, then simulates all the transitions of $$E$$ (with tape 1 simulating the write tape from $$E$$ and the part of tape 2 after $$x$$ simulating the R/W tape from $$E$$).. At each transition that writes the character $$\#$$ on tape $$1$$, $$M$$ checks if the string $$\#...\#$$ equals $$x$$. If it's equal, then $$M$$ accepts; if we never see $$x$$, then we just keep going (which is fine since recognizability means that we don't accept if the string is in the language - infinite execution is OK).
 
 Conversely, suppose we have a machine $$M$$ that recognizes $$L\subseteq\Sigma^{*}$$. A naive approach is to make an enumerator that works as follows: for each $$k\ge0$$, for each $$s\in\Sigma^{k}$$, print $$s$$ if $$M$$ accepts $$s$$. There's a problem with this approach - $$M$$ isn't guaranteed to terminate on elements in $$L$$! That means the enumerator might never get to anything (e.g. if $$M$$ infinite-loops on the empty string).
 
@@ -62,7 +62,7 @@ Suppose we have a language $$L\subseteq\Sigma^{*}$$ and we have an NDTM $$M$$ th
 Given an input $$x$$, and a configuration $$\{q_{0}x\}$$, our machine works as follows:
 
 {% highlight text %}
-for each t ≥ 1:
+while true:
     N := ∅
     for each c ∈ C: 
         for each c' that is a next step configuration for c 
