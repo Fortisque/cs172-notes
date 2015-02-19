@@ -73,7 +73,7 @@ We will first prove that $$AH$$ is not decidable (easy), then prove that it's no
 
 {% highlight text %}
 Input: <M>, x
-Define M_y as a machine that takes input x and simulates M on input y
+Define M_y as a machine with input y that simulates M on input x
 Accept if and only if M_AH accepts <M_y>
 {% endhighlight %}
 
