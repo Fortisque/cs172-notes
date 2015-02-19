@@ -1,0 +1,5 @@
+*.lyx
+*.lyx~
+*.lyx#
+*.pdf
+*.tex

@@ -17,4 +17,5 @@ I'll put my notes for CS172 here. If you see an error or would like to contribut
 6. [05 February]({{ site.url }}/classes/cs172/notes/lecture-06): Minimal DFAs 
 7. [10 February]({{ site.url }}/classes/cs172/notes/lecture-07): Streaming Algorithms
 8. [12 February]({{ site.url }}/classes/cs172/notes/lecture-08): Turing Machines
-9. [12 February]({{ site.url }}/classes/cs172/notes/lecture-09): Enumerators and NDTMs
+9. [17 February]({{ site.url }}/classes/cs172/notes/lecture-09): Enumerators and NDTMs
+10. [19 February]({{ site.url }}/classes/cs172/notes/lecture-09): Undecidable and Unrecognizable Languages
