@@ -15,7 +15,7 @@ Consider these two problems:
 
 Here's how we do it (solution by Anonymous on Piazza): Consider a "tournament" among the $$n$$ symbols. Keep track of a "champion" with an integer number of health points (start with the first symbol as the champion, with $$1$$ health point). Each symbol streams in and lines up to fight the current champion. If the next symbol is the same as the champion, she gets one more health point. Otherwise, the two symbols fight, and both lose $$1$$ health point (if both the champion and the challenger are killed, then the next symbol becomes the champion with $$1$$ health point). Observe that the majority element will in total have more health points than all the other symbols combined. Even if they all attack her, she will still survive to the end with at least $$1$$ health point, and if they waste their time wearing each other down, all the better. Also, at any point in time, you only need to keep track of the current champion ($$l$$ bits) and their hit points ($$\log n$$ bits).
 
-We will see later today that a harder version of problem 1 - finding a most frequent element *without* the assumption that a majority element exists - requires $$\Omega(nl)$$ memory if $$2^{l}>n^{2}$$. In fact, we will prove any algorithm that checks, given $$n$$ inputs, if $$0$$ is the unique most frequent element (we'll call this **Problem 2**), needs at least $$O(ln)$$ bits of memory.
+We will see later today that a harder version of problem 1 - finding a most frequent element *without* the assumption that a majority element exists - requires $$\Omega(nl)$$ memory if $$2^{l}>n^{2}$$. In fact, we will prove any algorithm that checks, given $$n$$ inputs, if $$0$$ is the unique most frequent element (we'll call this **Problem 2**), needs at least $$\Omega (ln)$$ bits of memory.
 
 ###A lower bound
 
@@ -91,4 +91,4 @@ $$
 
 *Thanks to Anonymous on Piazza for contributing the problem 1 solution and various enhancements/fixes.*
 
-*Thanks to Manuel Sabin for pointing out typos.*
+*Thanks to Manuel Sabin and Saam Barati for pointing out typos.*

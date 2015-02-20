@@ -97,3 +97,5 @@ Now note that we give $$\langle M\rangle$$ and $$y$$ such that $$(\langle M\rang
 On the other hand, if we feed it $$\langle M\rangle,y\notin H^{C}$$, notice that $$M$$ halts on input $$x$$ in $$t$$ steps. Let $$b$$ be the binary representation of $$t$$. Then $$M_{y}(b)$$ does not halt, which means that $$\langle M_{y}\rangle\notin AH$$, so $$M_{AH}$$ does not accept $$\langle M_{y}\rangle$$; therefore, we do not accept.
 
 Therefore, this is a valid recognizer for $$H^{C}$$; this contradiction implies that $$AH$$ is unrecognizable.
+
+*Thanks to Luca Trevisan for pointing out typo.*
