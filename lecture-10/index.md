@@ -77,7 +77,7 @@ Define M_y as a machine with input y that simulates M on input x
 Accept if and only if M_AH accepts <M_y>
 {% endhighlight %}
 
-which implies that if $$H$$ is decidable. This contradiction proves that $$AH$$ cannot be decidable.
+which implies that $$H$$ is decidable. This contradiction proves that $$AH$$ cannot be decidable.
 
 **Unrecognizability:** Suppose for contradiction $$AH$$ is recognizable. We wish to show that there exists a recognizer for $$H^{C}$$. We can construct one as follows: given inputs $$\langle M\rangle$$ and $$y$$, first define a machine $$M_{y}$$ as this machine:
 
