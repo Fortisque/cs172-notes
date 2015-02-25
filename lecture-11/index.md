@@ -27,7 +27,7 @@ Now given two DFAs $$M_{1}$$ and $$M_{2}$$, we want to know if they recognize th
 
 Define $$M$$ is a DFA and let $$L(M)=\{x:M\mbox{ accepts }x\}$$. Define $$EQ_{DFA}$$ to be the set of pairs of DFAs $$(\langle M_{1}\rangle,\langle M_{2}\rangle)$$ such that the languages that they accept are the same.
 
-Given $$M_{1}$$ and $$M_{2}$$, consider the language $$D:=L(M_{1})\triangle L(M_{2})$$ where $$A\triangle B=(A\cup B)\backslash(A\cap B)$$ such that $$D\neq\emptyset$$.
+Given $$M_{1}$$ and $$M_{2}$$, consider the language $$D:=L(M_{1})\triangle L(M_{2})$$ where $$A\triangle B=(A\cup B)\backslash(A\cap B)$$ consisting of elements that are in one of the languages but not in both. We wish to determine whether or not $$D$$ is the empty set.
 
 Given $$M_{1}$$, $$M_{2}$$, we can efficiently construct $$M$$ such that $$L(M)=D$$: let $$M_{1}=(Q_{1},\Sigma,\delta_{1},q_{01},F_{1})$$ and $$M_{2}=(Q_{2},\Sigma,\delta_{2},q_{02},F_{2})$$. Let $$M=(Q_{1}\times Q_{2},\Sigma,\delta,q_{0},F)$$ where $$\delta((q_{1},q_{2}),a)=(\delta(q_{1},a),\delta(q_{2},a))$$ and $$F=\{(q_{1},q_{2}):(q_{1}\in F\wedge q_{2}\notin F_{2})\vee(q_{1}\notin F_{1}\wedge q_{2}\in F_{2})\}$$; we can trivially check (using a DFS traversal, for instance) if there is some string that leads $$M$$ to a terminating state (implying that $$D=L(M)$$ is nonempty); therefore, $$EQ_{DFA}$$ is decidable in quadratic time.
 
@@ -52,3 +52,5 @@ Define $$M_{1}$$ to be the machine that takes input $$x$$ and simulates $$M(y)$$
 Define $$M_{2}$$ to be an LBA that always rejects.
 
 If $$M$$ does not halt on input $$y$$, then the first machine always rejects so the languages are equivalent; on the other hand, if it does halt sometime, then there is some $$x$$ that causes $$M_{1}$$ to accept which means the two languages are not the same.
+
+Since this allows us to decide $$H$$, we have a contradiction, so $$EQ_{LBA}$$ must be undecidable as desired.
