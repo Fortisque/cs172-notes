@@ -7,7 +7,7 @@ mathjax: true
 
 ---
 
-Halting problem: checking if a Turing machine halts on all inputs is not recognizable.
+Today, we will examine the *halting problem* - the problem of checking whether a TM halts on a given input - and show that the language of such TMs is undecidable.
 
 We will use this notation: if $$M$$ is a turing machine, then $$\langle M\rangle$$ is a string in $$\{0,1\}$$ that represents $$M$$. The *halting problem* is as follows: given a TM $$M$$ and an input $$x$$, we wish to determine whether or not $$M$$ halts on input $$X$$. We can represent this as the language $$H$$ of all pairs $$(\langle M\rangle,x)$$ such that $$M$$ halts on input $$x$$. We will show that $$H$$ is undecidable.
 
@@ -84,7 +84,7 @@ which implies that $$H$$ is decidable. This contradiction proves that $$AH$$ can
 {% highlight text %}
 Input x
 Simulate M on input y for t = int(x) steps
-If M_y halts within t steps:
+If M halts within t steps:
     infinite loop
 else:
     halt
@@ -98,4 +98,4 @@ On the other hand, if we feed it $$\langle M\rangle,y\notin H^{C}$$, notice that
 
 Therefore, this is a valid recognizer for $$H^{C}$$; this contradiction implies that $$AH$$ is unrecognizable.
 
-*Thanks to Luca Trevisan for pointing out typo.*
+*Thanks to Luca Trevisan and Saam Barati for pointing out typos.*
