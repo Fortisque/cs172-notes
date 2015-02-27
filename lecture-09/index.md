@@ -33,7 +33,7 @@ Conversely, suppose we have a machine $$M$$ that recognizes $$L\subseteq\Sigma^{
 
 Instead, let's try a similar approach, except we bound the number of steps in each step. That is: for each $$B\ge0$$, for each $$s\in\Sigma^{*}$$ of length at most $$B$$, if $$M$$ accepts $$s$$ in at most $$B$$ steps, then print $$s$$. Since the number of strings of length is at most $$B$$ is finite, and each of those strings is given at most $$B$$ time to be tested, each step runs in finite time; therefore, this TM has no chance of hanging like the naive one did.
 
-We now show that $$L(E)=L$$ by showing that (a) L(E)\subseteq $$L$$ and (b) L\subseteq $$L(E)$$. To prove (a): if $$s$$ is an output of $$E$$, then $$M$$ accepts $$s$$, and $$s\in L$$. To prove (b): Suppose $$M$$ accepts $$s$$. Let $$n=\vert S\vert$$, and let the time for $$M$$ to accept be $$t$$; it is obvious that for all $$B\ge\max\{t,n\}$$, $$E$$ outputs $$s$$ in phase $$B$$. $$\blacksquare$$ 
+We now show that $$L(E)=L$$ by showing that (a) $$L(E)\subseteq L$$ and (b) $$L\subseteq L(E)$$. To prove (a): if $$s$$ is an output of $$E$$, then $$M$$ accepts $$s$$, and $$s\in L$$. To prove (b): Suppose $$M$$ accepts $$s$$. Let $$n=\vert S\vert$$, and let the time for $$M$$ to accept be $$t$$; it is obvious that for all $$B\ge\max\{t,n\}$$, $$E$$ outputs $$s$$ in phase $$B$$. $$\blacksquare$$ 
 
 ###Nondeterministic TMs
 
@@ -72,3 +72,5 @@ while true:
 {% endhighlight %}
 
 Note that this machine will never reject (it will infinite loop if it doesn't accept).
+
+*Thanks to Anonymous on Piazza for pointing out typesetting error.*
