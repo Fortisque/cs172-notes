@@ -7,7 +7,7 @@ mathjax: true
 
 ---
 
-**Definition:** Suppose we have two strings $$L_{1}\subseteq\Sigma_{1}^{*}$$ and $$L_{2}\subseteq\Sigma_{2}^{*}$$. We say that $$L_{1}$$ has a *mapping reduction* to $$L_{2}$$, denoted $$L_{1}\leq_{m}L_{2}$$, if there is a computable function $$f:\Sigma_{1}^{*}\rightarrow\Sigma_{2}^{*}$$ such that for all $$x$$ in $$\Sigma_{1}^{*}$$, $$x\in L_{1}$$ if and only if $$f(x)\in L_{2}$$.
+**Definition:** Suppose we have two languages $$L_{1}\subseteq\Sigma_{1}^{*}$$ and $$L_{2}\subseteq\Sigma_{2}^{*}$$. We say that $$L_{1}$$ has a *mapping reduction* to $$L_{2}$$, denoted $$L_{1}\leq_{m}L_{2}$$, if there is a computable function $$f:\Sigma_{1}^{*}\rightarrow\Sigma_{2}^{*}$$ such that for all $$x$$ in $$\Sigma_{1}^{*}$$, $$x\in L_{1}$$ if and only if $$f(x)\in L_{2}$$.
 
 $$f$$ is not required to be either one-to-one or onto.
 
@@ -81,3 +81,5 @@ We shall derive an algorithm for the halting problem as follows: given an input 
 Initialize $$k$$ to $$1$$ . Start an infinite loop, incrementing $$k$$ at each step: for each $$P$$ of length $$k$$, if $$P$$ is a proof of $$s_{M,x}$$, accept; otherwise, if $$P$$ is a proof of $$\neg s_{M,x}$$, then reject.
 
 Notice that this decides the halting problem, since we know that $$s_{M,x}$$ must have a proof of some kind. Also, note that this must terminate, since a proof of infinite length makes no sense.
+
+*Thanks to TongKe Xue for pointing out mistake.*
