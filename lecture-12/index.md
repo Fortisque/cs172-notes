@@ -55,7 +55,7 @@ Formally, Rice's theorem can be expressed as follows: if $$C$$ is a set of langu
 
 Given $$M$$ and $$x$$, define $$M_{x}$$ as a machine that takes input $$z$$, simulates $$M(x)$$, and then simulate $$M_{1}(z)$$. If $$M(x)$$ halts, then $$L(M_{x})=L(M_{1})\in C$$, and if $$M(x)$$ does not halt, then $$L(M_{x})=\emptyset\notin C$$, as desired.
 
-**Case 2:** $$\emptyset\in C$$. We will do a reduction $$H^{C}\leq_{m}L_{c}$$. It suffices to define a computable function $$g(\langle M\rangle,x)=M_{x}$$ such that if $$M(x)$$ does not halt, then $$L(M_{x})\in C$$, and if $$M(x)$$ halts, then L(M_{x})\notin $$C$$. 
+**Case 2:** $$\emptyset\in C$$. We will do a reduction $$H^{C}\leq_{m}L_{c}$$. It suffices to define a computable function $$g(\langle M\rangle,x)=M_{x}$$ such that if $$M(x)$$ does not halt, then $$L(M_{x})\in C$$, and if $$M(x)$$ halts, then $$L(M_{x})\notin C$$. 
 
 Given $$M$$ and $$x$$, define $$M_{x}$$ as a machine that takes input $$z$$, simulates $$M(x)$$, and then simulate $$M_{2}(z)$$. If $$M(x)$$ halts, then $$L(M_{x})=L(M_{1})\notin C$$, and if $$M(x)$$ does not halt, then $$L(M_{x})=\emptyset\in C$$, as desired. $$\blacksquare$$ 
 
