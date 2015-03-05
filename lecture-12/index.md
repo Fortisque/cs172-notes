@@ -51,7 +51,7 @@ Formally, Rice's theorem can be expressed as follows: if $$C$$ is a set of langu
 
 **Proof:** Suppose $$C$$ is a set of languages and define $$L_{c}:=\{\langle M\rangle:L(M)\in C\}$$. Suppose that there exists $$\langle M_{1}\rangle\in L_{C}$$ and $$\langle M_{2}\rangle\notin L_{C}$$. We have two cases:
 
-**Case 1:** $$\emptyset\notin C$$. We will do a reduction $$H\leq_{m}L_{c}$$. It suffices to define a computable function $$f(\langle M\rangle,x)=M_{x}$$ such that if $$M(x)$$ halts, $$L(M_{x})\in C$$, and if $$M(x)$$ does not halt, then L(M_{x})\notin $$C$$.
+**Case 1:** $$\emptyset\notin C$$. We will do a reduction $$H\leq_{m}L_{c}$$. It suffices to define a computable function $$f(\langle M\rangle,x)=M_{x}$$ such that if $$M(x)$$ halts, $$L(M_{x})\in C$$, and if $$M(x)$$ does not halt, then $$L(M_{x})\notin C$$.
 
 Given $$M$$ and $$x$$, define $$M_{x}$$ as a machine that takes input $$z$$, simulates $$M(x)$$, and then simulate $$M_{1}(z)$$. If $$M(x)$$ halts, then $$L(M_{x})=L(M_{1})\in C$$, and if $$M(x)$$ does not halt, then $$L(M_{x})=\emptyset\notin C$$, as desired.
 
@@ -82,4 +82,4 @@ Initialize $$k$$ to $$1$$ . Start an infinite loop, incrementing $$k$$ at each s
 
 Notice that this decides the halting problem, since we know that $$s_{M,x}$$ must have a proof of some kind. Also, note that this must terminate, since a proof of infinite length makes no sense.
 
-*Thanks to TongKe Xue for pointing out mistake.*
+*Thanks to TongKe Xue for pointing out mistake and Anonymous for pointing out typesetting error.*
