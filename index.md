@@ -20,5 +20,5 @@ I'll put my notes for CS172 here. If you see an error or would like to contribut
 9. [17 February]({{ site.url }}/classes/cs172/notes/lecture-09): Enumerators and NDTMs
 10. [19 February]({{ site.url }}/classes/cs172/notes/lecture-10): Undecidable and Unrecognizable Languages
 11. [24 February]({{ site.url }}/classes/cs172/notes/lecture-11): Examples of Undecidable and Unrecognizable Languages
-12. [03 Marth]({{ site.url }}/classes/cs172/notes/lecture-12): Reductions, Rice's Theorem, and Gödel's First Incompleteness Theorem
+12. [03 March]({{ site.url }}/classes/cs172/notes/lecture-12): Reductions, Rice's Theorem, and Gödel's First Incompleteness Theorem
 13. [05 March]({{ site.url }}/classes/cs172/notes/lecture-13): Gödel's Incompleteness Theorems
