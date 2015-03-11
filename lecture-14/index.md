@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
 title: "Lecture 14"
-description: "Komolgorov Complexity"
+description: "Kolmogorov Complexity"
 category: articles
 mathjax: true
 
