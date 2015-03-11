@@ -49,7 +49,7 @@ strings. $$\blacksquare$$
 
 ---
 
-*Definition:* Fix a self-delimiting representation of Turing Machines
+**Definition:** Fix a self-delimiting representation of Turing Machines
 $$M$$ as bit string $$\langle M\rangle$$ (that implies that there is
 no valid representation of $$M$$ that is a prefix of another valid representation).
 Then we define the Kolmogorov complexity $$K(x)$$ as the minimum length
