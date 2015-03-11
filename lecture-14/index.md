@@ -13,7 +13,7 @@ Suppose $$M$$ is a TM and $$y$$ is a string. Let $$x=M(y)$$. Then we
 say that $$\langle M\rangle$$, $$y$$ is a representation of $$x$$; we
 can think of it as a self-extracting version of $$x$$.
 
-Define a {*}self-delimiting{*} bitstring as one we know we definitely
+Define a *self-delimiting* bitstring as one we know we definitely
 know when it ends; a simple way to encode a bitstring into a self-delimiting
 one is to record $$0$$ as $$00$$, $$1$$ as $$11$$, and end with $$01$$;
 an $$m$$-length bitstring maps to a $$2m+2$$ bitstring; we can also
@@ -41,7 +41,7 @@ strings. $$\blacksquare$$
 
 ---
 
-{*}Definition:{*} Fix a self-delimiting representation of Turing Machines
+*Definition:* Fix a self-delimiting representation of Turing Machines
 $$M$$ as bit string $$\langle M\rangle$$ (that implies that there is
 no valid representation of $$M$$ that is a prefix of another valid representation).
 Then we define the Kolmogorov complexity $$K(x)$$ as the minimum length
