@@ -57,12 +57,15 @@ of a representation of $$x$$.
 
 Define $$M_{ID}$$ as a Turing machine that, on input $$x$$, outputs
 $$x$$. Then $$\langle M_{ID}\rangle,x$$ is a representation of $$x$$,
-and if the length of $$x$$ is $$n$$, the length of $$\langle M_{ID}\rangle,x$$
-is $$n+O(1)$$; notice that $$K(x)\leq\vert x\vert+O(1)$$ (we can write
-down $$x$$ and an identity Turing machine. Proof: suppose $$C$$ is a
-computable compression algorithm, and that $$D$$ is the corresponding
-decompression algorithm. Then $$\langle D\rangle,C(x)$$ is a representation
-of $$x$$ because $$D(C(x))=x$$ which means that $$K(x)\leq\vert C(x)\vert+\vert\langle D\rangle\vert=\vert C(x)\vert+O(1)$$.
+and if the length of $$x$$ is $$n$$, the length of $$\langle
+M_{ID}\rangle,x$$ is $$n+O(1)$$; notice that $$K(x)\leq\vert
+x\vert+O(1)$$ (we can write down $$x$$ and an identity Turing machine,
+whose length is constant). Furthermore, suppose $$C$$ is a computable
+compression algorithm, and that $$D$$ is the corresponding
+decompression algorithm. Then $$\langle D\rangle,C(x)$$ is a
+representation of $$x$$ because $$D(C(x))=x$$ which means that
+$$K(x)\leq\vert C(x)\vert+\vert\langle D\rangle\vert=\vert
+C(x)\vert+O(1)$$.
 
 A simple counting argument shows that for all $$n$$, exists a string
 $$x$$ of length $$n$$ such that $$K(x)\geq n$$. Proof: suppose for contradiction
@@ -134,3 +137,5 @@ Similarly, for every $$n$$, there are strings $$x$$ of length $$n$$ such
 that $$\neg s_{x}$$ has no proof.
 
 This shows the existence of unprovable statements.
+
+*Thanks to Luca Trevisan for pointing out a misleading stray "Proof: " flying around.*
