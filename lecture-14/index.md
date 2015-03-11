@@ -7,19 +7,27 @@ mathjax: true
 
 ---
 
-Today, we will cover Kolmogorov complexity, which we will use to find undecidable problems unrelated to the halting problem, and to find another way to prove Gödel's incompleteness theorems and to construct random statements that, which high probability, are unprovable along with their complements The motivation for this approach will be to motivate the theory of data compression, and to attack information theory without the use of probability.
+Today, we will cover Kolmogorov complexity, which we will use to find
+undecidable problems unrelated to the halting problem, and to find
+another way to prove Gödel's incompleteness theorems and to construct
+random statements that, which high probability, are unprovable along
+with their complements The motivation for this approach will be to
+motivate the theory of data compression, and to attack information
+theory without the use of probability.
 
 Suppose $$M$$ is a TM and $$y$$ is a string. Let $$x=M(y)$$. Then we
 say that $$\langle M\rangle$$, $$y$$ is a representation of $$x$$; we
 can think of it as a self-extracting version of $$x$$.
 
-Define a *self-delimiting* bitstring as one we know we definitely
-know when it ends; a simple way to encode a bitstring into a self-delimiting
-one is to record $$0$$ as $$00$$, $$1$$ as $$11$$, and end with $$01$$;
-an $$m$$-length bitstring maps to a $$2m+2$$ bitstring; we can also
-map $$s$$ to $$\langle m\rangle s$$, where $$m$$ is the length of $$\langle s\rangle$$
-and $$m$$ is encoded using the preceding notation; this has length
-$$2\lceil\log m\rceil+2+m$$. 
+Define a *self-delimiting* bitstring as one we can tell the ending of,
+i.e. if another bitstring is appended to it, we have a way to figure
+out precisely where it ends and the appended bitstring begins; a
+simple way to encode a bitstring into a self-delimiting one is to
+record $$0$$ as $$00$$, $$1$$ as $$11$$, and end with $$01$$; an
+$$m$$-length bitstring maps to a $$2m+2$$ bitstring; we can also map
+$$s$$ to $$\langle m\rangle s$$, where $$m$$ is the length of
+$$\langle s\rangle$$ and $$m$$ is encoded using the preceding
+notation; this has length $$2\lceil\log m\rceil+2+m$$.
 
 In fact, we can show that the smallest number of bits that we can
 map $$m$$ bits to is higher than $$0.5\log m+m$$ bits; suppose for contradiction
