@@ -138,4 +138,56 @@ that $$\neg s_{x}$$ has no proof.
 
 This shows the existence of unprovable statements.
 
+###Recap
+
+*This material was actually presented in lecture 15, but I've put it in this
+notes file since the material is more relevant to the part of the class
+that ends with this lecture.*
+
+Let's recall how to prove that a language $$L$$ is not decidable.
+
+First, check if Rice's theorem applies.
+
+If it doesn't, try to reduce the halting problem $$H$$ to $$L$$: given
+a machine $$M$$,$$x$$, can I construct $$w$$ such that $$M$$ halts on
+$$x$$ if and only if $$w\in L$$?
+
+If this doesn't work, and $$L$$ is also unrecognizable, try to reduce
+the complement of the halting problem, $$H^{C}$$, onto $$L$$ - given
+$$M$$,$$x$$, can I construct $$w$$ such that $$M$$ loops on $$x$$ if and
+only if $$w\in L$$?
+
+And finally, try inequality-based Kolmogorov complexity approaches
+such as those shown in this lecture.
+
+Aside: all languages can be classified into degrees - we define $$L_{1}\equiv L_{2}$$
+if $$L_{1}\leq_{m}L_{2}$$ and $$L_{2}\leq_{m}L_{1}$$; it turns out that
+$$\leq_{m}$$ is a partial ordering between degrees.
+
+There was a lot of work in the '50's and '60's and about what these
+degrees looked like.
+
+What we know is that decidable problems are the minimal element in
+this partial order, and this partial ordering is dense - there are
+infinitely many degrees between any two degrees - in particular, there
+are problems that are undecidable that the halting problem cannot
+be reduced onto them, including the set of strings that are Kolmogorov incompressible.
+
+###Further Reading
+
+Some things that might be interesting - feel free to suggest more relevant and interesting
+stuff on Piazza:
+
+- A primer on Kolmogorov complexity, which might be more intuitive to
+  read than this one, can be found on
+  [Jeremy Kun's website](http://jeremykun.com/2012/04/21/kolmogorov-complexity-a-primer/).
+
+- Scott Aaronson has an
+  [writeup](http://www.scottaaronson.com/writings/bignumbers.html) on
+  a puzzle - what's the biggest number that someone can write on a
+  sheet of paper? The paradox at the end, of writing "the biggest
+  number I can write on this sheet of paper plus one" captures the
+  paradox that results from attempting to figure out what the biggest
+  number with a given Kolmogorov complexity is.
+
 *Thanks to Luca Trevisan for pointing out a misleading stray "Proof: " flying around.*
