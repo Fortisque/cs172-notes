@@ -136,6 +136,6 @@ $$A$$, then $$A\in P$$ if and only if $$\mathbf{P}=\mathbf{NP}$$.
 
 ###Further reading
 
-(please suggest interesting and related material on Piazza if you have any!)
+Please suggest interesting and related material on Piazza if you have any!
 
-Arora and Barak's treatment of of the material can be found in chapter 2 of [their book on complexity](http://theory.cs.princeton.edu/complexity/book.pdf) and includes an interesting section on the implications of $$\mathbf{P}=\mathbf{NP}$$.
+Arora and Barak's treatment of of the material can be found in chapter 2 of [their book on complexity](http://theory.cs.princeton.edu/complexity/book.pdf) and includes an interesting section (2.7.3) on the implications of $$\mathbf{P}=\mathbf{NP}$$.
