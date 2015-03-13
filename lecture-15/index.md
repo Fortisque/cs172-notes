@@ -78,7 +78,7 @@ anything that can be specified can be constructed. In particular,
 we have the following result:
 
 **Theorem:** Every $$\mathbf{NP}$$ search problem is solvable
-in polynomial time if and only if $$\mathbf{P}=\mbox{\textbf{NP}}.$$
+in polynomial time if and only if $$\mathbf{P}=\textbf{NP}$$.
 
 The "only if" direction is a trivial result of the definition
 above.
