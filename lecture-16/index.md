@@ -18,7 +18,7 @@ such that $$R$$ is poly-time decidable and $$y$$'s length is polynomial
 in the length of $$x$$. We will start by giving an alternative definition
 of $$\mathbf{NP}$$.
 
-\#\#\#An alternative definition of $$\mathbf{NP}$$
+###An alternative definition of $$\mathbf{NP}$$
 
 **Theorem:** A language $$L$$ is in $$\mathbf{NP}$$ if and only
 if $$L$$ is decidable by a polynomial time NDTM.
