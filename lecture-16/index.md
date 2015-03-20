@@ -161,5 +161,44 @@ by a constant number of bits).
 Now we can simply stack $$t$$ such $$O(t)$$ circuits on top of each
 other, and one more layer on top to check if the state is accepting.
 
-We will see how we can use these lemmas to prove $$\mathbf{NP}$$-completeness
-of CKT-SAT in Thursday's lecture.
+We will now prove $$\mathbf{NP}$$-completeness CKT-SAT.
+
+**Theorem:** for every $$L\subseteq\{0,1\}^{*}$$ in $$\mathbf{NP}$$,
+$$L\leq_{m}^{p}\mbox{CSAT}$$.
+
+Proof: Since $$L\in\mathbf{NP}$$, we know there exists a relation $$R$$
+such that:
+
+- $$L=\{x:\exists y\mbox{ s.t. }(x,y)\in R\}$$
+
+- $$R$$ is decidable in time less than or equal to $$p(\vert x\vert+\vert y\vert)$$,
+where $$p$$ is a polynomias.
+
+- There is a polynomial $$l$$ such that if $$(x,y)\in R$$, then $$\vert y\vert\leq l(\vert x\vert)$$
+
+We want a polynomial time computable function mapping $$x$$ to $$C_{x}$$
+such that $$\exists y\mbox{ s.t }(x,y)\in R\iff x\in L$$ if and only
+if $$\exists z\mbox{ s.t. }C_{x}(z)=1$$.
+
+Define $$n=\vert x\vert$$.
+
+Let $$M_{R}$$ be the TM that decides $$R$$ in time $$p(\vert x\vert+\vert y\vert)$$.
+Apply the circuit-construction process from Lemma 2
+to $$M_{R}$$ with inputs of length $$n+l(n)$$ and $$t=p(n+l(n))$$. We
+get a circuit $$C$$ with $$n+l(n)$$ inputs, one output, and size $$O(t^{2})=O((p(n+l(n))^{2})$$
+such that for all $$x'\in\{0,1\}^{n}$$ and all $$y\in\{0,1\}^{l(n)}$$,
+$$C(x,y)$$ if and only if $$M_{R}(x',y)$$ accepts in at most $$t$$ steps.
+This happens if and only if $$M_{R}(x',y)$$ accepts, but this only
+happens if $$(x',y)\in R$$.
+
+Now define $$C_{x}(y)$$ to be $$C(x,y)$$. Note that the size of $$C_{x}$$
+is at most the size of $$C$$, and $$C_{x}$$ is satisfiable if and only
+if there exists some $$y$$ such that $$C_{x}=1$$ if and only if there
+exists some $$y$$ such that $$C(x,y)=1$$ if and only if there exists
+some $$y$$ such that $$(x,y)\in R$$ if and only if $$x\in L$$, as desired.
+$$\blacksquare$$
+
+Intuitively, what we've done is to reduce the notion of checking the
+validity of a solution of any problem into a circuit; if we can find
+an input that causes the circuit to return $$1$$ (the solution is valid),
+we've solved the original problem.

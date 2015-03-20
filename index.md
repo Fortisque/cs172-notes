@@ -24,4 +24,5 @@ I'll put my notes for CS172 here. If you see an error or would like to contribut
 13. [05 March]({{ site.url }}/classes/cs172/notes/lecture-13): Gödel's Incompleteness Theorems
 14. [10 March]({{ site.url }}/classes/cs172/notes/lecture-14): Kolmogorov Complexity
 15. [12 March]({{ site.url }}/classes/cs172/notes/lecture-15): Intro to Complexity Classes
-15. [17 March]({{ site.url }}/classes/cs172/notes/lecture-15): Boolean Circuits and Satisfiability
+16. [17 March]({{ site.url }}/classes/cs172/notes/lecture-16): Boolean Circuits and Satisfiability
+17. [19 March]({{ site.url }}/classes/cs172/notes/lecture-17): SAT and 3SAT

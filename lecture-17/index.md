@@ -7,56 +7,13 @@ mathjax: true
 
 ---
 
-Recall that in the last lecture, we proved that for every Turing machine,
-given that $$n\leq t$$, we can construct a circuit $$C$$ of size $$O(t^{2})$$,
-with $$n$$ inputs and one output, such that for all length-n strings
-$$x$$, $$C(x)=1$$ if and only if $$M(x)$$ accepts in at most $$t$$ steps.
+**Note:** There's a missing image - I'll upload it tomorrow or the day after.
+Those who are taking CS270 will understand why I've been short on time for the
+past few days.
 
-Also recall that we defined circuit satisfiability, or CSAT, as follows:
-given a circuit $$C$$ with $$n$$ inputs and $$1$$ output, is there some
-input $$z\in\{0,1\}^{n}$$ such that $$C(z)=1$$?
-
-**Theorem:** for every $$L\subseteq\{0,1\}^{*}$$ in $$\mathbf{NP}$$,
-$$L\leq_{m}^{p}\mbox{CSAT}$$.
-
-Proof: Since $$L\in\mathbf{NP}$$, we know there exists a relation $$R$$
-such that:
-
-- $$L=\{x:\exists y\mbox{ s.t. }(x,y)\in R\}$$
-
-- $$R$$ is decidable in time less than or equal to $$p(\vert x\vert+\vert y\vert)$$,
-where $$p$$ is a polynomias.
-
-- There is a polynomial $$l$$ such that if $$(x,y)\in R$$, then $$\vert y\vert\leq l(\vert x\vert)$$
-
-We want a polynomial time computable function mapping $$x$$ to $$C_{x}$$
-such that $$\exists y\mbox{ s.t }(x,y)\in R\iff x\in L$$ if and only
-if $$\exists z\mbox{ s.t. }C_{x}(z)=1$$.
-
-Define $$n=\vert x\vert$$.
-
-Let $$M_{R}$$ be the TM that decides $$R$$ in time $$p(\vert x\vert+\vert y\vert)$$.
-Apply the circuit-construction process mentioned in the first paragraph
-to $$M_{R}$$ with inputs of length $$n+l(n)$$ and $$t=p(n+l(n))$$. We
-get a circuit $$C$$ with $$n+l(n)$$ inputs, one output, and size $$O(t^{2})=O((p(n+l(n))^{2})$$
-such that for all $$x'\in\{0,1\}^{n}$$ and all $$y\in\{0,1\}^{l(n)}$$,
-$$C(x,y)$$ if and only if $$M_{R}(x',y)$$ accepts in at most $$t$$ steps.
-This happens if and only if $$M_{R}(x',y)$$ accepts, but this only
-happens if $$(x',y)\in R$$.
-
-Now define $$C_{x}(y)$$ to be $$C(x,y)$$. Note that the size of $$C_{x}$$
-is at most the size of $$C$$, and $$C_{x}$$ is satisfiable if and only
-if there exists some $$y$$ such that $$C_{x}=1$$ if and only if there
-exists some $$y$$ such that $$C(x,y)=1$$ if and only if there exists
-some $$y$$ such that $$(x,y)\in R$$ if and only if $$x\in L$$, as desired.
-$$\blacksquare$$
-
-Intuitively, what we've done is to reduce the notion of checking the
-validity of a solution of any problem into a circuit; if we can find
-an input that causes the circuit to return $$1$$ (the solution is valid),
-we've solved the original problem.
-
----
+**Note:** I placed proof of $$\mathbf{NP}$$-completeness of CKT-SAT at the end of
+[lecture 16's notes]({{ site.url }}/classes/cs172/notes/lecture-17) so as not to
+split the proof across two pages.
 
 It is trivial to show that (since the composition of poly-time computable
 functions is itself poly-time computable) if $$A\leq_{m}^{p}B$$ and
