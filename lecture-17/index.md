@@ -12,7 +12,7 @@ Those who are taking CS270 will understand why I've been short on time for the
 past few days.
 
 **Note:** I placed proof of $$\mathbf{NP}$$-completeness of CKT-SAT at the end of
-[lecture 16's notes]({{ site.url }}/classes/cs172/notes/lecture-17) so as not to
+[lecture 16's notes]({{ site.url }}/classes/cs172/notes/lecture-16) so as not to
 split the proof across two pages.
 
 It is trivial to show that (since the composition of poly-time computable
