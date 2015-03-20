@@ -26,7 +26,7 @@ is $$\mathbf{NP}$$-hard (and $$\mathbf{NP}$$-complete if $$A\in\mathbf{NP}$$).
 In this lecture and the next, we'll look at a web of reductions that
 shows us that certain problems are $$\mathbf{NP}$$-hard or $$\mathbf{NP}$$-complete.
 
-!()(reduction-web.png)
+![](reduction-web.png)
 
 ###Satisfiability
 
