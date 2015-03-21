@@ -58,7 +58,8 @@ sequence $$c_{0},c_{,},...,c_{t(\vert x\vert)}$$ where $$c_{0}$$ is
 an initial configuration of $$M(x)$$; $$c_{i+1}$$ is a valid next-step
 configuration after $$c_{i}$$ and $$c_{t(\vert x\vert)}$$ is accepting.
 
-Now just define $$R=\{(x,c_{0},c_{1},...,c_{t(\vert x\vert)}\}\mbox{ s.t. \ensuremath{c_{0},...c_{t(\vert x\vert)}}is an accepting computation of \ensuremath{M(x)}}\}$$.
+Now just define $$R$$ as the set of all $$\{(x,c_{0},c_{1},...,c_{t(\vert x\vert)})\}$$
+such that $$c_{0},...c_{t(\vert x\vert)}$$ is an accepting computation o f$$M(x)$$.
 
 This obviously can be decided in polynomial time, since we can just
 check if $$c_{0},...,c_{t(\vert x\vert)}$$ is an accepting computation
@@ -169,7 +170,7 @@ $$L\leq_{m}^{p}\mbox{CSAT}$$.
 Proof: Since $$L\in\mathbf{NP}$$, we know there exists a relation $$R$$
 such that:
 
-- $$L=\{x:\exists y\mbox{ s.t. }(x,y)\in R\}$$
+- \\(L=\{x:\exists y\mbox{ s.t. }(x,y)\in R\}\\)
 
 - $$R$$ is decidable in time less than or equal to $$p(\vert x\vert+\vert y\vert)$$,
 where $$p$$ is a polynomias.
