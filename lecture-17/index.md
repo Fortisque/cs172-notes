@@ -7,10 +7,6 @@ mathjax: true
 
 ---
 
-**Note:** There's a missing image - I'll upload it tomorrow or the day after.
-Those who are taking CS270 will understand why I've been short on time for the
-past few days.
-
 **Note:** I placed proof of $$\mathbf{NP}$$-completeness of CKT-SAT at the end of
 [lecture 16's notes]({{ site.url }}/classes/cs172/notes/lecture-16) so as not to
 split the proof across two pages.
