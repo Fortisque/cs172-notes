@@ -7,8 +7,6 @@ mathjax: true
 
 ---
 
-**Note:** There are some placeholders for images below. Due to severe time constraints I won't be able to put them up before the end of the week - if they're not up by Saturday or Sunday, post on the Piazza thread or send me an email and I'll get them up. Thanks!
-
 Today, we will cover circuit satisfiability (CKT-SAT), the first $$\mathbf{NP}$$ problem we will carefully examine in this class.
 
 Recall that we defined $$\mathbf{P}$$ as the set of languages decidable
