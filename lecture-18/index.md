@@ -128,7 +128,7 @@ all decimal places), we assign each edge a number equal to $$1$$ in
 its digit followed by zeros, and then tack ones onto the beginning
 of the vertex numberings. 
 
-![](subset-sub.png)
+![](subset-sum.png)
 
 We set our target to $$k\times10^{\vert E\vert}+22...2$$ where the
 number $$22...2$$ has $$\vert E\vert$$ digits.
