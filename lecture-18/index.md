@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
 title: "Lecture 18"
-description: "NP-Complete Problems: Independent Set, Clique, Vertex Cover, Subset Sum, and Partition"
+description: "NP-Complete Problems I: Independent Set, Clique, Vertex Cover, Subset Sum, and Partition"
 category: articles
 mathjax: true
 

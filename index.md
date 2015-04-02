@@ -26,4 +26,5 @@ I'll put my notes for CS172 here. If you see an error or would like to contribut
 15. [12 March]({{ site.url }}/classes/cs172/notes/lecture-15): Intro to Complexity Classes
 16. [17 March]({{ site.url }}/classes/cs172/notes/lecture-16): Boolean Circuits and Satisfiability
 17. [19 March]({{ site.url }}/classes/cs172/notes/lecture-17): SAT and 3SAT
-18. [31 March]({{ site.url }}/classes/cs172/notes/lecture-18): NP-Complete Problems: Independent Set, Clique, Vertex Cover, Subset Sum, and Partition
+18. [31 March]({{ site.url }}/classes/cs172/notes/lecture-18): NP-Complete Problems I: Independent Set, Clique, Vertex Cover, Subset Sum, and Partition
+19. [02 April]({{ site.url }}/classes/cs172/notes/lecture-19): NP-Complete Problems II: Bin Packing, Scheduling, Knapsack, and Steiner Tree
