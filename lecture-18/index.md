@@ -136,8 +136,8 @@ number $$22...2$$ has $$\vert E\vert$$ digits.
 Notice that we must have $$k$$ vertices in order to get this sum (since
 vertices are the only ones with ones in the $$10^{\vert E\vert}$$ digit,
 and there cannot be any carry for digits lower than the highest bit),
-and the sum of the labels of these vertices much have ones in all
-digits except the first in order for the total sum to hit the target
+and the lowest $$\vert E\vert$$ digits of sum of the labels of these
+vertices must be nonzero in order for the total sum to hit the target
 (since the $$100...0$$ labels of the edges can only switch a $$1$$ to
 a $$2$$, but cannot turn a $$0$$ into a $$2$$). Let $$C$$ be the set of
 vertices corresponding to these vertex numbers; since their sum has
@@ -183,3 +183,6 @@ of the partition, excluding $$a_{n+1}$$, is $$A-t-(A-2t)=t$$ which gives
 us a subset that sums to $$t$$.
 
 Therefore, our reduction is valid.
+
+*Thanks to Anonymous for pointing out a mistake - the lowest $$\vert E\vert$$
+digits of the sum of vertex labels must be nonzero, but are not necessarily one.*
