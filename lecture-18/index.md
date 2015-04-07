@@ -103,10 +103,10 @@ only if $$(G,\vert V\vert-k)$$ is in the language of vertex covers.
 
 Now define $$\overline{G}$$ as the complement of $$G=(V,E)$$: that is,
 the edges of $$G$$ are the set of pairs of vertices from $$V$$ that
-are not in $$E$$. An independent set in $$G$$ is a independent set in
+are not in $$E$$. An independent set in $$G$$ is a clique in
 $$\overline{G}$$ and vice versa; therefore, $$(G,k)$$ is in the language
 of independent sets if and only if $$(\overline{G},k)$$ is in the language
-of vertex covers.
+of cliques.
 
 
 ###Subset Sum
